@@ -1,0 +1,45 @@
+{
+  "name": "pipet",
+  "version": "0.0.1",
+  "description": "A simple tool to pipe any command's output to stdout with customization.",
+  "homepage": "https://github.com/onurravli/pipet#readme",
+  "bugs": {
+    "url": "https://github.com/onurravli/pipet/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onurravli/pipet.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Onur Ravli",
+    "email": "onur@onurravli.com",
+    "url": "https://onurravli.com"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "pipet": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "build:dev": "tsc --watch -p .",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "chalk": "4.1.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.12.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.3"
+  }
+}

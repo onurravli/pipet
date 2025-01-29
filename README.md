@@ -22,5 +22,3 @@ This command will pipe the output of the `eslint .` command to stdout and add a 
 
 - `--on-success`: A message to display if the command succeeds.
 - `--on-error`: A message to display if the command fails.
-
-### Example
